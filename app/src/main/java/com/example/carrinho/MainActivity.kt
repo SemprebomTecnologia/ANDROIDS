@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
         val produtosAdapter: ArrayAdapter<String> = (this, android.R.layout.simple_list_item_1))
         //o adaptador da lista que vai add ou remover os items
         //list_view_produtos.adapter = produtosAdapter
-
+        dasdasdasdasdasdasdasdasd
 
     }
 
