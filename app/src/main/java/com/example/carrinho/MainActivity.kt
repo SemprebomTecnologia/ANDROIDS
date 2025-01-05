@@ -19,10 +19,20 @@ class MainActivity : AppCompatActivity() {
         }
 
         //array --> lista que para adiconar e remover os produtos
-        val produtosAdapter: ArrayAdapter<String> = (this, android.R.layout.simple_list_item_1))
+        val produtosAdapter = ArrayAdapter<String> (this, android.R.layout.simple_list_item_1))
+
         //o adaptador da lista que vai add ou remover os items
-        //list_view_produtos.adapter = produtosAdapter
-        dasdasdasdasdasdasdasdasd
+        produtosAdapter.add("Feijao")
+        //removendo
+        produtosAdapter.add("Carne Moida")
+
+        //lista com contatos
+        var contatos = mutableListOf("Mariana", "João", "Francisco", "Vitoria")
+        //criação do adaptador passando a lista como o terceiro parâmetro
+        val produtsAdapter = ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, contatos )
+
+
+
 
     }
 
