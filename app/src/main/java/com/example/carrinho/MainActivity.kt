@@ -1,6 +1,7 @@
 package com.example.carrinho
 
 import android.os.Bundle
+import android.widget.ArrayAdapter
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -16,5 +17,16 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
+        //array --> lista que para adiconar e remover os produtos
+        val produtosAdapter: ArrayAdapter<String> = (this, android.R.layout.simple_list_item_1))
+        //o adaptador da lista que vai add ou remover os items
+        //list_view_produtos.adapter = produtosAdapter
+
+
     }
+
+
+
+
 }
